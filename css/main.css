@@ -1,0 +1,128 @@
+* {
+   margin: 0px;
+   box-sizing: border-box;
+   padding: 0px;
+}
+
+:root {
+    font-size: 2vw;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(65.69deg, #6F0000 -1.79%, #820002 20.42%, #960003 44.19%, #AA0002 74.67%, #BE0000 97.4%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Orbitron', sans-serif;
+
+}
+
+.digits-holder {
+    background: #FFFFFF;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
+    padding: 1em;
+    min-width: 70vw;
+}
+
+.digits {
+    background: #FFFFFF;
+    box-shadow: inset -4px -4px 4px rgba(199, 199, 199, 0.25), inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 1em;
+    padding: 2em;
+}
+
+.time {
+    font-size: 8rem;
+    color: #BE0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time-increment , .time-decrement {
+    display: flex;
+    justify-content: space-around;
+}
+
+.time-increment button, .time-decrement button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2em;
+}
+
+.btn {
+    border: none;
+    background: white;
+    padding: 1em 3em;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.431);
+    transition: 100ms;
+    
+}
+
+.btn:active {
+    transform: translate(4px,4px);
+    box-shadow: none;
+}
+
+.btn-primary {
+    color: #BE0000;
+}
+
+.btn-secondary {
+    background: #3A3A3A;
+    color: white;
+}
+
+
+.shake {
+    animation: shake 800ms ease-in 500ms  infinite;
+}
+
+.timer-active {
+    animation: blink 900ms ease-in-out 1000ms infinite;
+}
+
+
+
+
+/* Animation */
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+
+@keyframes blink {
+    0%,100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}

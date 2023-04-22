@@ -1,40 +1,38 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="timer-container">
+        <div class="digits-holder">
+            <div class="digits">
+                <div class="time-increment">
+                    <button class="min" id="min-up"><img src="images/up.svg" alt=""></button>
+                    <button class="sec" id="sec-up"><img src="images/up.svg" alt=""></button>
+                </div>
+                <div class="time">
+                    <div class="minute-time" id="minute-time">00</div>
+                    <div class="colon">:</div>
+                    <div class="second-time"  id="second-time">00</div>
+                </div>
+                <div class="time-decrement">
+                    <button class="min" id="min-down"><img src="images/down.svg" alt=""></button>
+                    <button class="sec" id="sec-down"><img src="images/down.svg" alt=""></button>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="btn btn-primary" id="start-button">START</button>
+            <button class="btn btn-secondary" id="reset-button">RESET</button>
+        </div>
+    </div>
+    
 
-		<title>reveal.js</title>
-
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
-
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
-
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
-
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+    <script src="js/main.js"></script>
+</body>
 </html>
