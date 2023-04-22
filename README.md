@@ -1,9 +1,14 @@
-# JS Timer ([Demo](http://softon.github.io/jstimer))
+# My Todo App ([Demo](http://mytodoapp.epizy.com))
 
-A simple JavaScript countdown timer with alarm.
+A simple Todo App designed with the help of HTML/CSS & PHP & MySQL.
 
-![Screenshot](images/screenshot.png)
+![My Todo App](images/todoapp.png)
 
-## Development Video
+## Features
+- Add Todo
+- Remove Todo
+- Mark / Unmark Todo Complete
+- Edit Todo
 
-[Click Here for the Video Tutorial](https://youtu.be/xvfF1PMCh4A)
+## Tutorial Videos
+- Part 1 - Comming Soon
